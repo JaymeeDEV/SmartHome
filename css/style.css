@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:400,500,700');
-
+/*------------------------------------------------General*/
 html, body{
     height:100%;
     width:100%;
@@ -23,4 +23,47 @@ html, body{
 @media (max-width:768px){
 }
 @media (max-width:576px){
+}
+
+/*------------------------------------------------Social Links*/
+.social a{
+    font-size:2.5em;
+    padding:1.5em;
+}
+
+.fa-facebook{
+    color:#3b5998;
+}
+.fa-twitter{
+    color:#00aced;
+}
+.fa-instagram{
+    color:#e1306c;
+}
+.fa-github{
+    color:#211f1f;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+/*------------------------------------------------Scroll Bar*/
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
 }
