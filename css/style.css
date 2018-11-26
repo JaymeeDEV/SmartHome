@@ -1,69 +1,114 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:400,500,700');
 /*------------------------------------------------General*/
-html, body{
-    height:100%;
-    width:100%;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
     font-family: 'Oxygen', sans-serif;
-    color:#ffffff;
+    color: #ffffff;
     background-image: url('../images/background.jpg');
+    background-position: center;
+    background-size: contain;
 }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /*------------------------------------------------Nav Bar*/
-.navbar{
+
+.navbar {
     padding: 10px;
 }
-.navbar-nav li{
-    padding-right:50px;
+
+.navbar-nav li {
+    padding-right: 50px;
 }
-.nav-link{
-    font-size:1.1em !important;
+
+.nav-link {
+    font-size: 1.1em !important;
 }
-/*------------------------------------------------Media Queries*/
-@media (max-width:992px){
+
+/*------------------------------------------------Body*/
+
+.welcome {
+    padding-top: 150px;
 }
-@media (max-width:768px){
+
+.welcome hr {
+    border-top: 2px solid #ffffff;
+    width: 55%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
 }
-@media (max-width:576px){
+
+.title {
+    padding-top: 265px;
+}
+
+.padding {
+    padding: 50px;
 }
 
 /*------------------------------------------------Social Links*/
-.social a{
-    font-size:2.5em;
-    padding:1.5em;
+
+.social a {
+    font-size: 2.5em;
+    padding: 1.5em;
 }
 
-.fa-facebook{
-    color:#3b5998;
-}
-.fa-twitter{
-    color:#00aced;
-}
-.fa-instagram{
-    color:#e1306c;
-}
-.fa-github{
-    color:#211f1f;
+.fa-facebook {
+    color: #3b5998;
 }
 
-footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-instagram {
+    color: #e1306c;
+}
+
+.fa-github {
+    color: #211f1f;
 }
 
 /*------------------------------------------------Scroll Bar*/
 
 ::-webkit-scrollbar {
-  width: 9px;
+    width: 9px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 
+}
+
+/*------------------------------------------------Media Queries*/
+
+@media (max-width:768px) {
+    .social a {
+        font-size: 2em;
+        padding: 1em;
+    }
+}
+
+@media (max-width:576px) {
+    .social a {
+        font-size: 1.5em;
+        padding: .5;
+    }
+    .welcome{
+        padding-top:0;
+    }
 }
