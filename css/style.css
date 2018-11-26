@@ -7,21 +7,20 @@ html, body{
     color:#ffffff;
     background-image: url('../images/background.jpg');
 }
-
+/*------------------------------------------------Nav Bar*/
 .navbar{
     padding: 10px;
 }
-
-
-
-
+.navbar-nav li{
+    padding-right:50px;
+}
+.nav-link{
+    font-size:1.1em !important;
+}
 /*------------------------------------------------Media Queries*/
 @media (max-width:992px){
-    
 }
 @media (max-width:768px){
-    
 }
 @media (max-width:576px){
-    
 }
