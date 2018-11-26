@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,500,700');
+
+html, body{
+    height:100%;
+    width:100%;
+    font-family: 'Oxygen', sans-serif;
+    color:#ffffff;
+    background-image: url('../images/background.jpg');
+}
+
+.navbar{
+    padding: 10px;
+}
+
+
+
+
+/*------------------------------------------------Media Queries*/
+@media (max-width:992px){
+    
+}
+@media (max-width:768px){
+    
+}
+@media (max-width:576px){
+    
+}
