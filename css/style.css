@@ -11,13 +11,6 @@ body {
     background-position: center;
     background-size: contain;
 }
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /*------------------------------------------------Nav Bar*/
 
 .navbar {
@@ -110,5 +103,8 @@ body {
     }
     .welcome{
         padding-top:0;
+    }
+    .title{
+        padding-top:130px;
     }
 }
