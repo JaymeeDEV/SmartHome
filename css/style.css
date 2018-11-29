@@ -31,9 +31,15 @@ body {
     padding-top: 150px;
 }
 
-.welcome hr {
+.welcome .hr-index {
     border-top: 2px solid #ffffff;
     width: 55%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.welcome .hr-guide {
+    border-top: 2px solid #ffffff;
+    width: 60%;
     margin-top: .3rem;
     margin-bottom: 1rem;
 }
@@ -45,6 +51,8 @@ body {
 .padding {
     padding: 50px;
 }
+
+
 
 /*------------------------------------------------Social Links*/
 
