@@ -11,10 +11,6 @@ body {
   background-position: center;
   background-size: contain;
 }
-.img-fluid{
-  min-height:318px;
-  width:100%;
-}
 
 /*------------------------------------------------Nav Bar*/
 
@@ -56,6 +52,36 @@ body {
 
 .padding {
   padding: 50px;
+}
+
+.img-fluid {
+  min-height: 318px;
+  width: 100%;
+}
+
+.carousel-size {
+  height: 700px;
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 35px;
+  color: #000000;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: #000000;
 }
 
 /*------------------------------------------------Social Links*/
