@@ -7,9 +7,9 @@ body {
   width: 100%;
   font-family: 'Oxygen', sans-serif;
   color: #ffffff;
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/main-background.jpg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 /*------------------------------------------------Nav Bar*/
@@ -22,33 +22,32 @@ body {
   padding-right: 50px;
 }
 
-.nav-link {
-  font-size: 1.1em !important;
-}
-
 /*------------------------------------------------Body*/
 
-.welcome {
-  padding-top: 150px;
+.uses-card-body{
+  padding-left:0;
+  padding-right:0;
 }
 
-.welcome .hr-index {
+.uses-card-text{
+  padding:25px;
+}
+
+.combining-card{
+  padding-top:25px;
+}
+
+.card-deck{
+  height:100%;
+}
+
+hr {
   border-top: 2px solid #ffffff;
-  width: 55%;
+  width: 80%;
   margin-top: .3rem;
   margin-bottom: 1rem;
 }
 
-.welcome .hr-guide {
-  border-top: 2px solid #ffffff;
-  width: 60%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
-
-.title {
-  padding-top: 265px;
-}
 
 .padding {
   padding: 50px;
@@ -59,40 +58,20 @@ body {
   width: 100%;
 }
 
-.carousel-size {
-  height: 700px;
-  width: 100%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after {
-  content: '>';
-  font-size: 35px;
-  color: #000000;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 35px;
-  color: #000000;
+blockquote{
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 /*------------------------------------------------Social Links*/
 
 .social a {
   font-size: 2.5em;
-  padding: 1.5em;
+  padding:20px;
 }
 
 .fa-facebook {
-  color: #3b5998;
+  color: #5090d2
 }
 
 .fa-twitter {
@@ -104,7 +83,7 @@ body {
 }
 
 .fa-github {
-  color: #211f1f;
+  color: #e9ecef;
 }
 
 /*------------------------------------------------Scroll Bar*/
@@ -127,22 +106,3 @@ body {
 
 /*------------------------------------------------Media Queries*/
 
-@media (max-width:768px) {
-  .social a {
-    font-size: 2em;
-    padding: 1em;
-  }
-}
-
-@media (max-width:576px) {
-  .social a {
-    font-size: 1.5em;
-    padding: .5;
-  }
-  .welcome {
-    padding-top: 0;
-  }
-  .title {
-    padding-top: 130px;
-  }
-}
