@@ -24,6 +24,12 @@ body {
 
 /*------------------------------------------------Body*/
 
+
+
+.space{
+  padding-top:15px;
+}
+
 .uses-card-body{
   padding-left:0;
   padding-right:0;
@@ -48,14 +54,8 @@ hr {
   margin-bottom: 1rem;
 }
 
-
 .padding {
   padding: 50px;
-}
-
-.img-fluid {
-  min-height: 318px;
-  width: 100%;
 }
 
 blockquote{
