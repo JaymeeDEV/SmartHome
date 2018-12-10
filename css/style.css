@@ -24,6 +24,31 @@ body {
 
 /*------------------------------------------------Body*/
 
+.question-left{
+  float:left;
+}
+
+.question-right{
+  float:right;
+}
+
+.modal-content{
+  background-color: #2f3338;
+  opacity: .85;
+  padding:0 20px;
+}
+
+.form-control{
+  margin-bottom:20px;
+}
+
+.form-control input{
+  height:40px;
+  border-radius: 5px;
+  border:0;
+  font-size:18px;
+}
+
 .checked{
   color:#00CED1;
 }
