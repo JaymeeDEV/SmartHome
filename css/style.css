@@ -24,10 +24,12 @@ body {
 
 /*------------------------------------------------Body*/
 
-
+.checked{
+  color:#00CED1;
+}
 
 .space{
-  padding-top:15px;
+  padding-top:125px;
 }
 
 .uses-card-body{
@@ -56,6 +58,9 @@ hr {
 
 .padding {
   padding: 50px;
+}
+.padding-small{
+  padding:20px;
 }
 
 blockquote{
