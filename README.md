@@ -33,5 +33,10 @@ Bootstrap is used to impliment already created styles which is then customized w
 **HTML5 & CSS3**
 Used as the base languages.
 
-**Bootstrap**
+[Bootstrap](http://getbootstrap.com/)
 Helped to make the website responsive and more simple.
+
+## Credits
+
+- Information: [W3 Schools](https://www.w3schools.com/) helped me to learn many new topics when I needed it
+- Media: Background photo obtained from [Pixabay](www.pixabay.com)

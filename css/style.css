@@ -22,57 +22,7 @@ body {
   padding-right: 50px;
 }
 
-/*------------------------------------------------Body*/
-
-.question-left{
-  float:left;
-}
-
-.question-right{
-  float:right;
-}
-
-.modal-content{
-  background-color: #2f3338;
-  opacity: .85;
-  padding:0 20px;
-}
-
-.form-control{
-  margin-bottom:20px;
-}
-
-.form-control input{
-  height:40px;
-  border-radius: 5px;
-  border:0;
-  font-size:18px;
-}
-
-.checked{
-  color:#00CED1;
-}
-
-.space{
-  padding-top:125px;
-}
-
-.uses-card-body{
-  padding-left:0;
-  padding-right:0;
-}
-
-.uses-card-text{
-  padding:25px;
-}
-
-.combining-card{
-  padding-top:25px;
-}
-
-.card-deck{
-  height:100%;
-}
+/*------------------------------------------------General*/
 
 hr {
   border-top: 2px solid #ffffff;
@@ -84,20 +34,99 @@ hr {
 .padding {
   padding: 50px;
 }
-.padding-small{
-  padding:20px;
+
+.padding-small {
+  padding: 20px;
 }
 
-blockquote{
-  padding-top:50px;
-  padding-bottom:50px;
+
+/*------------------------------------------------Home Page*/
+
+.uses-card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.uses-card-text {
+  padding: 25px;
+}
+
+.combining-card {
+  padding-top: 25px;
+}
+
+.card-deck {
+  height: 100%;
+}
+
+blockquote {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*------------------------------------------------Guide Page*/
+.carousel-item-resize {
+    margin-bottom: 50px;
+}
+
+.carousel-text-position{
+  width:70%;
+  text-align:center;
+  margin-left:40px;
+  margin-bottom:50px;
+}
+
+
+
+/*------------------------------------------------Products Page*/
+
+.checked {
+  color: #00CED1;
+}
+
+/*------------------------------------------------Contact Form*/
+
+.modal-content {
+  background-color: #2f3338;
+  opacity: .85;
+  padding: 0 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control input {
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+}
+
+#fullname {
+  margin-top: 20px;
+}
+
+.btn.btn-secondary.center-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
 }
 
 /*------------------------------------------------Social Links*/
 
 .social a {
-  font-size: 2.5em;
-  padding:20px;
+  font-size: 35px;
+  padding: 10px;
 }
 
 .fa-facebook {
@@ -134,4 +163,118 @@ blockquote{
 
 }
 
+/*------------------------------------------------Title Hover Effect*/
+
+.hover_effect {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: block;
+  width: 100%;
+  padding: 1px;
+  position: relative;
+  color: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.hover_effect:after {
+  content: "";
+  height: 5px;
+  left: 0;
+  bottom: -10px;
+  width: 1px;
+  position: absolute;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  right: 0;
+  margin: 0 auto;
+}
+
+.hover_effect:hover {
+  color: #787a7b;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.hover_effect:hover:after,
+.hover_effect:focus:after {
+  width: 100%;
+  background-color: #fff;
+}
+
 /*------------------------------------------------Media Queries*/
+/*Medium-Large Phones*/
+@media only screen and (min-width:365px){
+  .carousel-item-resize {
+    margin-bottom: 50px;
+    margin-left:15px;
+}
+.carousel-text-position{
+  width:70%;
+  text-align:center;
+  margin-left:55px;
+  margin-bottom:50px;
+}
+}
+/*Tablets*/
+@media only screen and (min-width: 768px) {
+  .carousel-text-position {
+  position: relative;
+  text-align: center;
+  width:50%;
+  float:right;
+  bottom:250px;
+  right:80px;
+}
+.carousel-item-resize {
+  position:relative;
+  top:350px;
+}
+#carousel-assistants{
+  bottom:200px;
+}
+.social a {
+  font-size: 45px;
+  padding: 20px;
+}
+}
+/*Small Laptops*/
+@media only screen and (min-width: 992px){
+  .carousel-text-position{
+    bottom:150px;
+  }
+  #carousel-assistants{
+    bottom:200px;
+  }
+}
+/*Desktops*/
+  @media only screen and (min-width: 1200px){
+  .carousel-item-resize{
+    margin-left:200px;
+    top:300px;
+  }
+  .carousel-text-position{
+    right:200px;
+  }
+  .social a {
+  font-size: 45px;
+  padding: 40px;
+}
+}
+  
+  
+  
+  
+  
+  
+  
+  
