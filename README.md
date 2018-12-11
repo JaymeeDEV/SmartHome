@@ -1,27 +1,37 @@
-BRIEF:
-4/5 pages
-Use git & github for each new piece of functionality
-Navigation and grid layout
-Semantic HTML5
-Responsive design
-Validate code
-Create readme.md
+# Smart Home Tech Website
+
+## Overview
 
 
+## What is This Website For?
 
-Apple: Easiest setup. Makes own gadgets, more reliable and safe. Most attractive app interface with icons. Drags you into their ecosystem.
+This website allows people to learn about smart home technology and voice assistants.
 
+## What Does it Do?
 
-Google: Can have issues working with iPhones.
+Provides information about smart home technology, purchase links and a contact section for additional support.
 
+## How Does it Work?
 
-Amazon:
+Using HTML5 and CSS3, along with bootstrap which allows for content such as navbars, footers, grid columns, cards, and buttons.
+These languages work together where HTML5 is used for the base layer to place text and images.
+CSS3 is used to style these HTML5 and bootstrap elements.
+Bootstrap is used to impliment already created styles which is then customized with CSS3.
 
-Usability
-Security
-Enjoyable
-Search ability
-Compatibility
+## Features 
 
-Star ratings
-Price
+- Navigation elements
+- Consistant design
+- Information covering most smart home technology
+- Images with dropdown information
+- Mobile first responsive design
+- Links to purchase products
+- Contact form
+
+## Tech Used
+
+**HTML5 & CSS3**
+Used as the base languages.
+
+**Bootstrap**
+Helped to make the website responsive and more simple.
