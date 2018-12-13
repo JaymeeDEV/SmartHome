@@ -25,10 +25,9 @@ body {
 /*------------------------------------------------General*/
 
 hr {
-  border-top: 2px solid #ffffff;
-  width: 80%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
+    border-top: 2px solid #00000000;
+    width: 100%;
+    margin-top: 25px;
 }
 
 .padding {
@@ -39,6 +38,9 @@ hr {
   padding: 20px;
 }
 
+.breadcrumb{
+  background-color:#00000000;
+}
 
 /*------------------------------------------------Home Page*/
 
@@ -64,21 +66,46 @@ blockquote {
   padding-bottom: 50px;
 }
 
+.blockquote-footer{
+  color:#788898;
+}
+
 /*------------------------------------------------Guide Page*/
+
 .carousel-item-resize {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.carousel-text-position{
-  width:70%;
-  text-align:center;
-  margin-left:40px;
-  margin-bottom:50px;
+.carousel-text-position {
+  width: 70%;
+  text-align: center;
+  margin-left: 40px;
+  margin-bottom: 50px;
 }
-
-
+   .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+}
 
 /*------------------------------------------------Products Page*/
+
+.back-white{
+  background-color:#ffffff;
+  width:100%;
+}
+
+.breadcrumb-item > a {
+    color: #ffffff;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+}
+
+.products-image{
+  display:block;
+  margin:auto;
+}
 
 .checked {
   color: #00CED1;
@@ -119,14 +146,14 @@ textarea {
 .footer {
   position: absolute;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /*------------------------------------------------Social Links*/
 
 .social a {
-  font-size: 35px;
-  padding: 10px;
+  font-size: 32px;
+  padding: 14px;
 }
 
 .fa-facebook {
@@ -175,7 +202,7 @@ textarea {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 500;
 }
 
@@ -212,69 +239,118 @@ textarea {
 }
 
 /*------------------------------------------------Media Queries*/
+
 /*Medium-Large Phones*/
-@media only screen and (min-width:365px){
+
+@media only screen and (min-width:365px) {
   .carousel-item-resize {
     margin-bottom: 50px;
-    margin-left:15px;
+    margin-left: 15px;
+  }
+  .carousel-text-position {
+    width: 70%;
+    text-align: center;
+    margin-left: 55px;
+    margin-bottom: 50px;
+  }
+  .footer {
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+  }
 }
-.carousel-text-position{
-  width:70%;
-  text-align:center;
-  margin-left:55px;
-  margin-bottom:50px;
-}
-}
+
 /*Tablets*/
+
 @media only screen and (min-width: 768px) {
   .carousel-text-position {
-  position: relative;
-  text-align: center;
-  width:50%;
-  float:right;
-  bottom:250px;
-  right:80px;
-}
-.carousel-item-resize {
-  position:relative;
-  top:350px;
-}
-#carousel-assistants{
-  bottom:200px;
-}
+    text-align: center;
+    width: 50%;
+    float: right;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-right: 80px;
+
+  }
+  .carousel-item-resize {
+    float: left;
+    padding-top: 100px;
+  }
+  #carousel-assistants {
+    padding-top: 30px;
+  }
 .social a {
   font-size: 45px;
   padding: 20px;
 }
+.hover_effect:hover:after,
+.hover_effect:focus:after {
+  width: 80%;
+}
+.hover_effect{
+  padding-top:25px;
+}
+.modal-content{
+  position:relative;
+  top:60px;
+}
+.uses-card{
+  padding-top:40px;
+}
 }
 /*Small Laptops*/
-@media only screen and (min-width: 992px){
-  .carousel-text-position{
-    bottom:150px;
+
+@media only screen and (min-width: 992px) {
+  #carousel-assistants {
+    padding-top: 150px;
   }
-  #carousel-assistants{
-    bottom:200px;
+  .carousel-item-resize {
+    padding-top: 0;
   }
+  .hover_effect:hover:after,
+.hover_effect:focus:after {
+  width: 90%;
 }
+.modal-content{
+  top:120px;
+}
+}
+
 /*Desktops*/
-  @media only screen and (min-width: 1200px){
-  .carousel-item-resize{
-    margin-left:200px;
-    top:300px;
+
+@media only screen and (min-width: 1200px) {
+  .carousel-text-position {
+    position: relative;
+    padding-top: 100px;
+    margin-right: 50px;
+    width: 50%;
   }
-  .carousel-text-position{
-    right:200px;
+
+  .carousel-item-resize {
+    position: relative;
+    padding-left: 150px;
   }
+
+
   .social a {
-  font-size: 45px;
-  padding: 40px;
+    font-size: 45px;
+    padding: 40px;
+  }
+  .hover_effect:hover:after,
+.hover_effect:focus:after {
+  width: 50%;
 }
 }
-  
-  
-  
-  
-  
-  
-  
-  
+
+/*XL Desktops*/
+
+@media only screen and (min-width: 1700px) {
+  .carousel-text-position {
+    margin-right: 100px;
+  }
+  .carousel-item-resize {
+    padding-left: 250px;
+  }
+}
