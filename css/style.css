@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:400,500,700');
 /*------------------------------------------------General*/
 
-html,
 body {
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
   width: 100%;
   font-family: 'Oxygen', sans-serif;
   color: #ffffff;
   background-image: url('../images/main-background.jpg');
   background-position: center;
   background-size: cover;
+  flex-direction: column;
 }
 
 /*------------------------------------------------Nav Bar*/
@@ -25,9 +26,9 @@ body {
 /*------------------------------------------------General*/
 
 hr {
-    border-top: 2px solid #00000000;
-    width: 100%;
-    margin-top: 25px;
+  border-top: 2px solid #00000000;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .padding {
@@ -38,8 +39,20 @@ hr {
   padding: 20px;
 }
 
-.breadcrumb{
-  background-color:#00000000;
+.p-bottom{
+  padding-bottom:50px;
+}
+
+.breadcrumb {
+  background-color: #00000000;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  height: 40px;
 }
 
 /*------------------------------------------------Home Page*/
@@ -66,9 +79,10 @@ blockquote {
   padding-bottom: 50px;
 }
 
-.blockquote-footer{
-  color:#788898;
+.blockquote-footer {
+  color: #ffffff;
 }
+
 
 /*------------------------------------------------Guide Page*/
 
@@ -82,33 +96,56 @@ blockquote {
   margin-left: 40px;
   margin-bottom: 50px;
 }
-   .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 40px;
-    height: 40px;
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
 }
 
 /*------------------------------------------------Products Page*/
 
-.back-white{
-  background-color:#ffffff;
-  width:100%;
+.back-white {
+  background-color: #ffffff;
+  width: 100%;
 }
 
-.breadcrumb-item > a {
-    color: #ffffff;
+.breadcrumb-item>a {
+  color: #ffffff;
 }
 
 .breadcrumb-item.active {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-.products-image{
-  display:block;
-  margin:auto;
+.products-image {
+  display: block;
+  margin: auto;
 }
 
 .checked {
   color: #00CED1;
+}
+
+.echo-text{
+  padding-top:50px;
+  padding-bottom: 100px;
+}
+
+.card-body > h2 > a{
+  color:#000000;
+}
+
+.zoom{
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*------------------------------------------------Contact Form*/
@@ -143,11 +180,6 @@ textarea {
   resize: none;
 }
 
-.footer {
-  position: absolute;
-  width: 100%;
-  padding-top: 20px;
-}
 
 /*------------------------------------------------Social Links*/
 
@@ -223,13 +255,12 @@ textarea {
 }
 
 .hover_effect:hover {
-  color: #787a7b;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .hover_effect:hover:after,
@@ -253,12 +284,9 @@ textarea {
     margin-left: 55px;
     margin-bottom: 50px;
   }
-  .footer {
-  position:fixed;
-   left:0px;
-   bottom:0px;
-   height:100px;
-   width:100%;
+  .social a {
+    font-size: 45px;
+    padding: 20px;
   }
 }
 
@@ -281,25 +309,20 @@ textarea {
   #carousel-assistants {
     padding-top: 30px;
   }
-.social a {
-  font-size: 45px;
-  padding: 20px;
+
+  .hover_effect:hover:after,
+  .hover_effect:focus:after {
+    width: 80%;
+  }
+  .hover_effect {
+    padding-top: 25px;
+  }
+  
+  .uses-card {
+    padding-top: 40px;
+  }
 }
-.hover_effect:hover:after,
-.hover_effect:focus:after {
-  width: 80%;
-}
-.hover_effect{
-  padding-top:25px;
-}
-.modal-content{
-  position:relative;
-  top:60px;
-}
-.uses-card{
-  padding-top:40px;
-}
-}
+
 /*Small Laptops*/
 
 @media only screen and (min-width: 992px) {
@@ -310,12 +333,9 @@ textarea {
     padding-top: 0;
   }
   .hover_effect:hover:after,
-.hover_effect:focus:after {
-  width: 90%;
-}
-.modal-content{
-  top:120px;
-}
+  .hover_effect:focus:after {
+    width: 80%;
+  }
 }
 
 /*Desktops*/
@@ -332,16 +352,10 @@ textarea {
     position: relative;
     padding-left: 150px;
   }
-
-
   .social a {
     font-size: 45px;
     padding: 40px;
   }
-  .hover_effect:hover:after,
-.hover_effect:focus:after {
-  width: 50%;
-}
 }
 
 /*XL Desktops*/
@@ -352,5 +366,12 @@ textarea {
   }
   .carousel-item-resize {
     padding-left: 250px;
+  }
+  .modal-dialog{
+    padding-top:100px;
+  }
+  .hover_effect:hover:after,
+  .hover_effect:focus:after {
+    width: 60%;
   }
 }
