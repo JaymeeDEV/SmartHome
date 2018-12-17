@@ -121,6 +121,8 @@ blockquote {
 .products-image {
   display: block;
   margin: auto;
+  width:350px;
+  padding-top:60px;
 }
 
 .checked {
