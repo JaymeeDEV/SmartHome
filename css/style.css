@@ -321,6 +321,19 @@ textarea {
   .uses-card {
     padding-top: 40px;
   }
+  .products-card{
+    border-color:#6c757d;
+  }
+  .back-white-border {
+  background-color: #3e3c3cc9;
+  width: 100%;
+  border-color: #000000;
+  border: groove;
+  border-radius: 20px;
+}
+.m-bottom{
+  margin-bottom: 50px;
+}
 }
 
 /*Small Laptops*/
