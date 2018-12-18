@@ -329,9 +329,7 @@ textarea {
   .back-white-border {
   background-color: #3e3c3cc9;
   width: 100%;
-  border-color: #000000;
-  border: groove;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .m-bottom{
   margin-bottom: 50px;
