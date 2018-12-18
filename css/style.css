@@ -101,6 +101,10 @@ blockquote {
   height: 40px;
 }
 
+#carousel-assistants {
+    height:1700px;
+  }
+
 /*------------------------------------------------Products Page*/
 
 .back-white {
