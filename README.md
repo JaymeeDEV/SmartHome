@@ -41,6 +41,20 @@ Used as the base languages
 [Bootstrap](http://getbootstrap.com/)
 helped to make the website responsive and more simple
 
+## Testing 
+
+1. Contact Form:
+* Go to the 'Contact Us' section
+* Attempt to submit an empty form
+* Attempt an email without an @ symbol
+* Attempt to submit with an empty 'questions' section
+
+2. Responsiveness:
+* On any webpage
+* Right click and inspect
+* Change the resolution to multiple device types or just use the 'responsive' option
+* Another alternative is to use [Responsinator](https://www.responsinator.com)
+
 ## Credits
 
 - Information: [W3 Schools](https://www.w3schools.com/) helped me to learn many new topics when I needed it
